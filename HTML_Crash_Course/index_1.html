@@ -42,24 +42,125 @@ Hello World
     <h5>Heading Five</h5>
     <h6>Heading Six</h6>
     <!-- Paragraph -->
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vehicula semper dictum. Donec eros odio,
-        varius in fermentum non, ullamcorper et ipsum. Donec mattis nunc sit amet ornare ultrices. Aliquam vehicula mi
-        eu dignissim imperdiet. Integer lacinia eros lorem, eget cursus elit maximus ac. Cras nec efficitur lectus. Ut
-        pharetra <strong>blandit ligula</strong>. Donec sit amet accumsan nunc, eget porta mauris. Ut egestas mauris in justo cursus
-        egestas. Proin pharetra arcu nisi, in pulvinar lorem ultrices a. Aliquam lobortis purus lectus, sed maximus nisi
-        mollis a. Praesent ex mi, commodo non cursus eget, bibendum ac sapien. Duis sit amet ante vehicula, ornare
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vehicula semper dictum. Donec eros odio, varius in fermentum non, ullamcorper et ipsum. Donec mattis nunc sit amet ornare ultrices. Aliquam vehicula mi eu dignissim imperdiet. Integer
+        lacinia eros lorem, eget cursus elit maximus ac. Cras nec efficitur lectus. Ut pharetra <strong>blandit ligula</strong>. Donec sit amet accumsan nunc, eget porta mauris. Ut egestas mauris in justo cursus egestas. Proin pharetra arcu nisi, in pulvinar
+        lorem ultrices a. Aliquam lobortis purus lectus, sed maximus nisi mollis a. Praesent ex mi, commodo non cursus eget, bibendum ac sapien. Duis sit amet ante vehicula, ornare
         <em>ligula sed, gravida sem</em>. Donec sit amet felis fermentum velit interdum pharetra. Ut sed condimentum justo.
     </p>
     <p>
-        Lorem ipsum dolor sit amet, <a href="http://google.com" target="_blank">consectetur adipiscing elit</a>. Vestibulum vehicula semper dictum. Donec eros odio,
-        varius in fermentum non, ullamcorper et ipsum. Donec mattis nunc sit amet ornare ultrices. Aliquam vehicula mi
-        eu dignissim imperdiet. Integer lacinia eros lorem, eget cursus elit maximus ac. Cras nec efficitur lectus. Ut
-        pharetra blandit ligula. Donec sit amet accumsan nunc, eget porta mauris. Ut egestas mauris in justo cursus
-        egestas. Proin pharetra arcu nisi, in pulvinar lorem ultrices a. Aliquam lobortis purus lectus, sed maximus nisi
-        mollis a. Praesent ex mi, commodo non cursus eget, bibendum ac sapien. Duis sit amet ante vehicula, ornare
-        ligula sed, gravida sem. Donec sit amet felis fermentum velit interdum pharetra. Ut sed condimentum justo.
+        Lorem ipsum dolor sit amet, <a href="http://google.com" target="_blank">consectetur adipiscing elit</a>. Vestibulum vehicula semper dictum. Donec eros odio, varius in fermentum non, ullamcorper et ipsum. Donec mattis nunc sit amet ornare ultrices.
+        Aliquam vehicula mi eu dignissim imperdiet. Integer lacinia eros lorem, eget cursus elit maximus ac. Cras nec efficitur lectus. Ut pharetra blandit ligula. Donec sit amet accumsan nunc, eget porta mauris. Ut egestas mauris in justo cursus egestas.
+        Proin pharetra arcu nisi, in pulvinar lorem ultrices a. Aliquam lobortis purus lectus, sed maximus nisi mollis a. Praesent ex mi, commodo non cursus eget, bibendum ac sapien. Duis sit amet ante vehicula, ornare ligula sed, gravida sem. Donec sit
+        amet felis fermentum velit interdum pharetra. Ut sed condimentum justo.
     </p>
 
+    <!--List-->
+    <!--Unordered List-->
+    <ul>
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 1</li>
+        <li>List Item 4</li>
+    </ul>
+    <!--Ordered List-->
+    <ol type="I">
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+        <li>List Item 3</li>
+    </ol>
+    <!--Table-->
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Hubert Truty</td>
+                <td>hubert98truty@gmail.com</td>
+                <td>22</td>
+            </tr>
+            <tr>
+                <td>John Doe</td>
+                <td>john@somehting.com</td>
+                <td>26</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <hr>
+    <br>
+    <!-- Forms -->
+    <form action="process.php" method="POST">
+        <div>
+            <label>First Name</label>
+            <input type="text" name="firstName" placeholder="John">
+        </div>
+        <br>
+        <div>
+            <label>Last Name</label>
+            <input type="text" name="lastName" placeholder="Doe">
+        </div>
+        <br>
+        <div>
+            <label>Email</label>
+            <input type="email" name="email">
+        </div>
+        <br>
+        <div>
+            <label>Message</label>
+            <textarea name="message"></textarea>
+        </div>
+        <br>
+        <div>
+            <label>Gender</label>
+            <select name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label>Age:</label>
+            <input type="number" name="age" value="30">
+        </div>
+        <br>
+        <div>
+            <label>Birthday:</label>
+            <input type="date" name="birthday">
+        </div>
+        <br>
+        <input type="submit" name="submit" value="Submit">
+    </form>
+
+    <br>
+    <hr>
+    <br>
+
+    <!-- Button -->
+    <button click="someFunction">Click Me</button>
+
+    <br>
+    <hr>
+    <br>
+
+    <!-- Image -->
+    <a href="image/sample.jpg">
+        <img src="/icon/175062.png" alt="My Sample Image" width="200">
+    </a>
+
+    <!-- Quaotations -->
+    <blockquote cite="http://google.com">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nobis delectus dignissimos sint libero, ab, minima excepturi perspiciatis ipsam architecto ipsa adipisci veritatis in? Itaque autem fuga veritatis in optio!
+    </blockquote>
+
+    <P>The <abbr title="World Wide Web">WWW</abbr> is awesome</P>
+
+    <p>HTML<cite> crash courese by Brad Traversy</cite></p>
 </body>
 
 </html>
@@ -79,4 +180,24 @@ Hello World
 
 <!-- Tag Attributes
     <tagname attributename="attributevalue">content</tagname>
+    <h1 title="My Company">About Us</h1>
+
+    1. All tags can have attributes
+    2. Provide information about an element
+    3. Placed within the start tag
+    4. Key/value pairs (id="someld")
+-->
+
+<!-- HTML 5 Semantic Tags 
+    A semantic element clearly describes 
+    its meaning to both the borwser and the developer.
+
+    <header</header> Logo ant thinks like that
+    <footer></footer> Footer and copyright
+    <aside></aside> 
+    <main></main>
+    <article></article> Article for something like blog
+    <nav></nav> nav bar
+    <section></section> copy text
+    <details></details>
 -->

@@ -1,0 +1,23 @@
+/* Before We Begin...
+    1. This is for Beginners
+    2. Continued form HTML Crash Course
+    3. Everyone's CSS is different
+    4. NOT covering flexbox, animation, etc
+    5. We can't cover everything
+*/
+
+
+/* What is CSS?
+    1. Cascading Stylesheets
+    2. NOT a programming language
+    3. Stylesheet/Styling language
+    4. Used for webiste layout and design
+    5. Can be extended with SASS
+*/
+
+
+/* Methods For Adding CSS
+    1. Inline CSS: Directly in the html element (NO!)
+    2. Internal CSS: Using <style> tags within a single document
+    3. External CSS: Linking an external .css file
+*/

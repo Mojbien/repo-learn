@@ -1,0 +1,128 @@
+<!-- What is Flexbox?
+A CSS3 layout mode that provides an easy and clean way to arrange item within a container
+ 1. NO FLOATS!
+ 2. Responsive and mobile friendly
+ 3. Positioning child elements is MUCH easier
+ 4. Flex container's margins do not collapse with the margins of its contents.
+ 5. Order of elements can easly be changed without editing the source of HTML
+-->
+
+<!-- Flexible box model concept
+    1. The ability to alter item width and height to best fit in its
+        containers available free space
+    2. Flexbox is direction-agnostic
+    3. built for small scale layouts while the upcoming "Grid" specification
+        is for more large scale
+-->
+
+<!-- Flex properties
+    1. display: flex | inline-flex;
+    2. flex-direction: row | column;
+    3. flex-wrap: wrap | nowrap | wrapreverse;
+    4. flex-basic: <length>;
+    5. justify-content: flex-start | flex-end | center;
+    6. align0self flex-start | flex-end | center;
+    7. align-items: flex-start | flex-en | center;
+    8. align-content: flex-start | flex-end | center;
+    9. flex-grow: <number>;
+    10. flex-shrink: <number>;
+    11. flex: <integer>;
+    12. order: <integer>;
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @media(min-width:758px){
+
+                .container {
+                display: flex;
+                /* align-items: flex-end | flex-start | flex-center; */
+                /* flex-direction: column; */
+            }
+
+            .container2{
+                display: flex;
+                justify-content: spadce-between;
+            }
+
+        }
+      
+
+        .container div, .container2 div {
+            border: 1px #ccc solid;
+            padding: 10px;
+        }
+
+        .box-1 {
+            flex: 1;
+            order: 2;
+        }
+
+        .box-2 {
+            flex: 1;
+            order: 1;
+        }
+
+        .box-3 {
+            flex: 2;
+            order: 3;
+        }
+
+        .container2-box-1{
+            flex-basis: 30%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box-1">
+            <h3>Box One</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+
+            </p>
+        </div>
+        <div class="box-2">
+            <h3>Box Two</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+
+            </p>
+        </div>
+        <div class="box-3">
+            <h3>Box Three</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+
+            </p>
+        </div>
+    </div> <!-- Container -->
+    <div class="container2">
+        <div class="container2-box-1">
+            <h3>Box One</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+
+            </p>
+        </div>
+        <div class="container2-box-1">
+            <h3>Box Two</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+
+            </p>
+        </div>
+        <div class="container2-box-1">
+            <h3>Box Three</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+
+            </p>
+        </div>
+    </div> <!-- Container2 -->
+
+</body>
+
+</html>

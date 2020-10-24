@@ -39,23 +39,24 @@ A CSS3 layout mode that provides an easy and clean way to arrange item within a 
     <title>Document</title>
 
     <style>
-        @media(min-width:758px){
+        @media(min-width:758px) {
 
-                .container {
+            .container {
                 display: flex;
                 /* align-items: flex-end | flex-start | flex-center; */
                 /* flex-direction: column; */
             }
 
-            .container2{
+            .container2 {
                 display: flex;
                 justify-content: spadce-between;
             }
 
         }
-      
 
-        .container div, .container2 div {
+
+        .container div,
+        .container2 div {
             border: 1px #ccc solid;
             padding: 10px;
         }
@@ -75,7 +76,7 @@ A CSS3 layout mode that provides an easy and clean way to arrange item within a 
             order: 3;
         }
 
-        .container2-box-1{
+        .container2-box-1 {
             flex-basis: 30%;
         }
     </style>
@@ -126,3 +127,6 @@ A CSS3 layout mode that provides an easy and clean way to arrange item within a 
 </body>
 
 </html>
+
+
+
